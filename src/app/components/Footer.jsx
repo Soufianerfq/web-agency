@@ -1,6 +1,6 @@
 import Image from "next/image";
 import facebook from "../../../public/facebook.png"
-import instagram from "../../../public/instagram.png"
+import instagram from "../../../public/Instagram.png"
 import linkdin from "../../../public/LinkedIn.png";
 import twitter from "../../../public/twitter.png"
 import logo from "../../../public/Logo.png"

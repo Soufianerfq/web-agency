@@ -1,6 +1,6 @@
 import Image from "next/image";
 import katty from "../../../public/Katty.png"
-import john from "../../../public/john.png"
+import john from "../../../public/John.png"
 import james from "../../../public/james.png"
 
 export default function Reviews(){
