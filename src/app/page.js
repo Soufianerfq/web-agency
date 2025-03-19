@@ -12,16 +12,17 @@ export default function Home() {
   const portfolioRef = useRef()
   const contactusRef = useRef()
   const servicesRef = useRef()
+  const homesRef = useRef()
   return (
     <>
       <div
         id="bg"
         className="w-[100%] h-[100vh] bg-[#2F6B4F] text-white font-light"
       >
-        <header className="flex justify-between w-[100%] pt-[40px] pr-[80px] pl-[80px] fixed top-0 bg-[#2F6B4F] z-[99]">
-          <Header reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} services = {servicesRef}/>
+        <header className="flex justify-between w-[100%] pt-[30px] pb-[10px] pr-[80px] pl-[80px] fixed top-0 bg-[#2F6B4F] z-[99]">
+          <Header home= {homesRef} reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} services = {servicesRef}/>
         </header>
-        <main id="main" className=" flex justify-center flex-col mt-[80px] pr-[100px] pl-[100px]">
+        <main ref={homesRef} id="main" className=" flex justify-center flex-col mt-[80px] pr-[100px] pl-[100px]">
           <Main />
         </main>
         <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] flex flex-col justify-center ">
@@ -41,7 +42,7 @@ export default function Home() {
           <Contactus />
         </section>
         <footer className="text-[#2A2C3D] w-[100%] flex pt-[90px] pb-[90px] max-[928px]:flex-col">
-          <Footer />
+          <Footer home= {homesRef} reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} services = {servicesRef}/>
         </footer>
       </div>
     </>

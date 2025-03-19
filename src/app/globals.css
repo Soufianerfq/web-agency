@@ -107,8 +107,13 @@ nav>button:hover{
     margin-right: 30px;
 }
 
+#links>div>button{
+    margin-top: 12px;
+    text-align: start;
+    cursor: pointer;
+}
 #links>div>h3{
-    margin-top: 13px;
+    margin-top: 12px;
 }
 /* ///////////////////////////////////////////// */
 @media (max-width:671px) {

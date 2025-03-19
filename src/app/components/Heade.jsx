@@ -4,7 +4,7 @@ import HamburgerComp from "./Hamburger";
 import logo from "../../../public/Logo.png";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-export default function Header({portfolio, reviews, contactus, services}) {
+export default function Header({home, portfolio, reviews, contactus, services}) {
   const [small, setSmall] = useState(null)
 
   useEffect(()=>{
@@ -31,6 +31,7 @@ export default function Header({portfolio, reviews, contactus, services}) {
         </div>
         {!small ? (
           <Nav
+            home = {home}
             reviews={reviews}
             portfolio={portfolio}
             contactus={contactus}
@@ -38,6 +39,7 @@ export default function Header({portfolio, reviews, contactus, services}) {
           />
         ) : (
           <HamburgerComp
+            home = {home}
             reviews={reviews}
             portfolio={portfolio}
             contactus={contactus}

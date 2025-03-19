@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import { useState } from "react"
 import Hamburger from "hamburger-react";
 
-export default function HamburgerComp({ portfolio, reviews, contactus, services }) {
+export default function HamburgerComp({home, portfolio, reviews, contactus, services }) {
   const [isOpen, setOpen] = useState(false);
   return (
     <nav>
@@ -14,7 +14,12 @@ export default function HamburgerComp({ portfolio, reviews, contactus, services 
             <Hamburger size={24} toggled={isOpen} toggle={setOpen} />
           </div>
           <nav className="flex flex-col items-center space-y-[50px]">
-            <button>Home</button>
+            <button
+              onClick={() =>
+                home.current?.scrollIntoView({
+                  behavior: "smooth",
+          })
+        }>Home</button>
             <button
               onClick={() =>{
                 services.current?.scrollIntoView({

@@ -5,7 +5,7 @@ import linkdin from "../../../public/LinkedIn.png";
 import twitter from "../../../public/twitter.png"
 import logo from "../../../public/Logo.png"
 
-export default function Footer(){
+export default function Footer({home, portfolio, reviews, contactus, services }){
     return (
       <>
         <div className=" w-[30%] mr-auto ml-auto">
@@ -29,13 +29,50 @@ export default function Footer(){
         </div>
 
         <div id="links" className="w-[30%] mr-auto ml-auto flex justify-evenly text-[20px]">
-          <div>
+          <div className="flex flex-col">
             <h2 className="font-semibold">Page</h2>
-            <h3>Home</h3>
-            <h3>Our Services</h3>
-            <h3>Portfolio</h3>
-            <h3>Testimonial</h3>
-            <h3>Contact Us</h3>
+<button 
+          onClick={() =>
+          home.current?.scrollIntoView({
+            behavior: "smooth",
+          })
+        }>Home</button>
+      <button
+        onClick={() =>
+          services.current?.scrollIntoView({
+            behavior: "smooth",
+          })
+        }
+      >
+        Our Services
+      </button>
+      <button
+        onClick={() =>
+          portfolio.current?.scrollIntoView({
+            behavior: "smooth",
+          })
+        }
+      >
+      Portfolio
+      </button>
+      <button
+        onClick={() =>
+          reviews.current?.scrollIntoView({
+            behavior: "smooth",
+          })
+        }
+      >
+        Testimonial
+      </button>
+      <button
+        onClick={() =>
+          contactus.current?.scrollIntoView({
+            behavior: "smooth",
+          })
+        }
+      >
+        Contact Us
+      </button>
           </div>
           <div>
             <h2 className="font-semibold">Explore</h2>
@@ -53,3 +90,6 @@ export default function Footer(){
       </>
     );
 }
+
+
+      
