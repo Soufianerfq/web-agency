@@ -17,7 +17,7 @@ export default function Services(){
         </div>
         <div
           id="services"
-          className="flex flex-wrap mr-auto ml-auto justify-center"
+          className="flex flex-wrap w-[90%] justify-center mr-auto ml-auto"
         >
           <div className="card">
             <Image src={figma} />

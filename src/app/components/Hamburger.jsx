@@ -14,8 +14,8 @@ export default function HamburgerComp({ portfolio, reviews, contactus, services 
             <Hamburger size={24} toggled={isOpen} toggle={setOpen} />
           </div>
           <nav className="flex flex-col items-center space-y-[50px]">
-            <div>Home</div>
-            <div
+            <button>Home</button>
+            <button
               onClick={() =>{
                 services.current?.scrollIntoView({
                   behavior: "smooth",
@@ -25,8 +25,8 @@ export default function HamburgerComp({ portfolio, reviews, contactus, services 
               }
             >
               Our Services
-            </div>
-            <div
+            </button>
+            <button
               onClick={() =>{
                 portfolio.current?.scrollIntoView({
                   behavior: "smooth",
@@ -36,8 +36,8 @@ export default function HamburgerComp({ portfolio, reviews, contactus, services 
               }
             >
               Portfolio
-            </div>
-            <div
+            </button>
+            <button
               onClick={() =>{
                 reviews.current?.scrollIntoView({
                   behavior: "smooth",
@@ -47,8 +47,8 @@ export default function HamburgerComp({ portfolio, reviews, contactus, services 
               }
             >
               Testimonial
-            </div>
-            <div
+            </button>
+            <button
               onClick={() =>{
                 contactus.current?.scrollIntoView({
                   behavior: "smooth",
@@ -58,7 +58,7 @@ export default function HamburgerComp({ portfolio, reviews, contactus, services 
               }
             >
               Contact Us
-            </div>
+            </button>
           </nav>
         </div>
       )}

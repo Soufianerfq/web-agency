@@ -14,7 +14,7 @@ export default function Portfolio(){
         </div>
         <div
           id="portfolio"
-          className="flex flex-wrap mr-auto ml-auto justify-center"
+          className="flex flex-wrap mr-auto ml-auto justify-evenly"
         >
           <div className="">
             <Image  src={hospital} />

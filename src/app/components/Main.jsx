@@ -11,9 +11,9 @@ export default function Main(){
           2016, we present a variety of digital services that can help you solve
           problems in your business
         </h3>
-        <div className="w-fit bg-white text-[#2A2C3D] text-[30px] font-semibold pt-2 pb-2 pr-5 pl-5 ml-auto mr-auto mb-[60px]">
+        <button className="bg-white w-fit self-center text-[#2A2C3D] text-[30px] font-semibold pt-2 pb-2 pr-5 pl-5 mb-[60px] cursor-pointer contact">
           Get Started
-        </div>
+        </button>
         <div id="lp" className="w-[90%] mr-auto ml-auto">
           <Image src={mainImage} />
         </div>

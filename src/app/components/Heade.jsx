@@ -23,7 +23,7 @@ export default function Header({portfolio, reviews, contactus, services}) {
 
     return (
       <>
-        <div id="logo" className="flex mr-auto">
+        <div id="logo" className="flex">
           <Image src={logo} />
           <h2 className="font-semibold text-[21px] mt-[8px] ml-[8px]">
             Bubble Bash

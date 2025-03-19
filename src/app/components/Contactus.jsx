@@ -8,9 +8,9 @@ export default function Contactus(){
           Please contact us and we will discuss about your project, don't forget
           we are always here for you
         </h3>
-        <div className="w-fit text-[30px] font-semibold bg-white text-[#2A2C3D] pt-2 pb-2 pr-5 pl-5 ml-auto mr-auto mb-[60px]">
-          Contact Us
-        </div>
+        <button className="bg-white w-fit self-center text-[#2A2C3D] text-[30px] font-semibold pt-2 pb-2 pr-5 pl-5 mb-[60px] cursor-pointer contact">
+          Get Started
+        </button>
       </>
     );
 }

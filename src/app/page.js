@@ -18,13 +18,13 @@ export default function Home() {
         id="bg"
         className="w-[100%] h-[100vh] bg-[#2F6B4F] text-white font-light"
       >
-        <header className="w-[100%] flex pt-[40px] pr-[80px] pl-[80px]">
+        <header className="flex justify-between w-[100%] pt-[40px] pr-[80px] pl-[80px]">
           <Header reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} services = {servicesRef}/>
         </header>
-        <main id="main" className="mt-[40px] pr-[100px] pl-[100px]">
+        <main id="main" className=" flex justify-center flex-col mt-[40px] pr-[100px] pl-[100px]">
           <Main />
         </main>
-        <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] pl-[30px]">
+        <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] flex flex-col justify-center ">
           <Services />
         </section>
         <section ref={portfolioRef} className="text-[#2A2C3D] w-[100%]">
@@ -36,7 +36,7 @@ export default function Home() {
         <section 
         ref={contactusRef}
           id="contactus"
-          className=" w-[100%] pt-[20px] pr-[140px] pl-[140px] pb-[20px] bg-[#2F6B4F] text-white w[100%]"
+          className=" w-[100%] pt-[20px] pr-[140px] pl-[140px] pb-[20px] bg-[#2F6B4F] text-white flex justify-center flex-col"
         >
           <Contactus />
         </section>

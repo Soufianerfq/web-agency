@@ -28,7 +28,7 @@ export default function Footer(){
           </div>
         </div>
 
-        <div id="links" className="w-[30%] mr-auto ml-auto flex space-x-[15%] text-[20px]">
+        <div id="links" className="w-[30%] mr-auto ml-auto flex justify-evenly text-[20px]">
           <div>
             <h2 className="font-semibold">Page</h2>
             <h3>Home</h3>
