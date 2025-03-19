@@ -18,10 +18,10 @@ export default function Home() {
         id="bg"
         className="w-[100%] h-[100vh] bg-[#2F6B4F] text-white font-light"
       >
-        <header className="flex justify-between w-[100%] pt-[40px] pr-[80px] pl-[80px]">
+        <header className="flex justify-between w-[100%] pt-[40px] pr-[80px] pl-[80px] fixed top-0 bg-[#2F6B4F] z-[99]">
           <Header reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} services = {servicesRef}/>
         </header>
-        <main id="main" className=" flex justify-center flex-col mt-[40px] pr-[100px] pl-[100px]">
+        <main id="main" className=" flex justify-center flex-col mt-[80px] pr-[100px] pl-[100px]">
           <Main />
         </main>
         <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] flex flex-col justify-center ">
