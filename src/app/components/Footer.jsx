@@ -35,6 +35,8 @@ export default function Footer({home, portfolio, reviews, contactus, services })
           onClick={() =>
           home.current?.scrollIntoView({
             behavior: "smooth",
+                        block: "start"
+
           })
         }>Home</button>
       <button

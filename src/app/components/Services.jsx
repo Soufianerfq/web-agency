@@ -8,8 +8,8 @@ import illustrating from "../../../public/illustrating.png";
 
 export default function Services(){
     return (
-      <>
-        <div className="w-[80%] ml-auto mr-auto mb-[40px] pt-[50px]">
+      <div className="max-w-[2000px] mr-auto ml-auto flex flex-col justify-around w-[100%]">
+        <div className="w-[80%] mb-[40px] pt-[50px] ml-[10%]">
           <h3>Our Services</h3>
           <h2 className="text-[30px] font-semibold">
             We Provide What You Need
@@ -17,7 +17,7 @@ export default function Services(){
         </div>
         <div
           id="services"
-          className="flex flex-wrap w-[87%] justify-center mr-auto ml-auto"
+          className="flex flex-wrap w-[87%] justify-center self-center"
         >
           <div className="card">
             <Image src={figma} />
@@ -66,6 +66,6 @@ export default function Services(){
             </p>
           </div>
         </div>
-      </>
+      </div>
     );
 }

@@ -1,10 +1,12 @@
 export default function Nav({home, portfolio, reviews, contactus, services }) {
   return (
-    <nav className="flex justify-between w-[45%]">
+    <nav className="flex justify-between w-[46%] max-w-[650px]">
       <button 
           onClick={() =>
           home.current?.scrollIntoView({
             behavior: "smooth",
+                        block: "start"
+
           })
         }>Home</button>
       <button

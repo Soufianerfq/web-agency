@@ -31,11 +31,17 @@ export default function HamburgerComp({home, portfolio, reviews, contactus, serv
           </div>
           <nav ref={linkRef} className="flex flex-col items-center space-y-[50px]">
             <button
-              onClick={() =>
+              onClick={() =>{
                 home.current?.scrollIntoView({
                   behavior: "smooth",
-          })
-        }>Home</button>
+                  block: 'start'
+                })
+                setOpen(false)
+              }
+              }
+            >
+              Home
+            </button>
             <button
               onClick={() =>{
                 services.current?.scrollIntoView({

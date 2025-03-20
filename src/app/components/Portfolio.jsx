@@ -5,8 +5,8 @@ import superM from "../../../public/super.jpg"
 
 export default function Portfolio(){
     return (
-      <>
-        <div className="w-[80%] ml-auto mr-auto mb-[40px] pt-[50px]">
+      <div className="max-w-[2000px] mr-auto ml-auto">
+        <div className="w-[80%] mb-[40px] pt-[50px] ml-[10%]">
           <h3>Our Portofolio’s</h3>
           <h2 className="text-[30px] font-semibold">
             Recent Projects
@@ -41,6 +41,6 @@ export default function Portfolio(){
             </p>
           </div>
         </div>
-      </>
+      </div>
     );
 }

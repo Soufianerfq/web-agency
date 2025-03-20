@@ -6,10 +6,12 @@ nav>button{
     cursor: pointer;
     font-weight: 600;
     transition: 0.2s;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 nav>button:hover{
-    transform: scale(1.1) translatey(-5px);
+    transform: scale(1.1);
 }
 
 .contact{
@@ -20,16 +22,16 @@ nav>button:hover{
 }
 /* /////////////////////////////////////////////////// */
 #services>div {
+    max-width: 550px;
     width: 25%;
+    max-height: 400px;
     margin-bottom: 80px;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin-left: 2%;
+    margin-right: 2%;
     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.079);
-    padding: 40px;
+    padding: 3%;
 }
-/* #services{
-    justify-content: space-evenly;
-} */
+
 
 .card>img {
     margin-left: auto;
@@ -50,17 +52,17 @@ nav>button:hover{
 /* //////////////////////////////////////////////// */
 #portfolio{
     justify-content: space-evenly;
-
+    margin-right:  auto;
+    margin-left: auto;
 }
 
 #portfolio>div {
-    width: 25%;
+    width: 23%;
     margin-bottom: 60px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
-#portfolio>div>img{
-    height: 70%;
-}
 
 #portfolio>div>p{
     margin-top: 5px;
@@ -75,12 +77,15 @@ nav>button:hover{
 }
 /* //////////////////////////////////////////////// */
 #reviews{
+
     justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #reviews>div{
-    width: 25%;
-    height:auto;
+    max-width: 500px;
+    width:26%;
     margin-bottom: 80px;
     padding: 20px;
     border: 4px solid black;
@@ -91,10 +96,10 @@ nav>button:hover{
 #reviews>div>p {
     margin-top: 5px;
     margin-bottom: 20px;
-    font-size: larger;
+    font-size: 130%;
 }
 #reviews>div>h2 {
-    font-size: x-large;
+    font-size: 190%;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -105,10 +110,17 @@ nav>button:hover{
     margin-top: 6px;
 }
 
+/* /////////////////////////// */
 #sm>img{
     margin-right: 30px;
     height: auto;
 
+}
+
+#links>div{
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 150px
 }
 
 #links>div>button{
@@ -118,6 +130,13 @@ nav>button:hover{
 }
 #links>div>h3{
     margin-top: 12px;
+}
+
+#stats>div{
+    width: 13%;
+}
+#stats>div>h3{
+    text-align: center;
 }
 /* ///////////////////////////////////////////// */
 @media (max-width:671px) {
@@ -146,20 +165,20 @@ nav>button:hover{
     }
 
     main{
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-top: 78px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 20px;
     }
 
     main>h3{
         margin-top: 15px;
         margin-bottom: 15px;
         font-size: 20px;
+        margin-right: 10px;
     }
 
-    main>button{
-        margin-bottom: 15px;
-        margin-top: 15px;
+    main>div>button{
+        margin-bottom: 30px;
     }
     #lp{
         display: none;
@@ -167,14 +186,15 @@ nav>button:hover{
 
     #stats{
         margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top:0px;
+        padding: 5px;
     }
 
     #stats>div{
         font-size: 12px;
     }
     #stats>div>h2{
-        font-size:30px;
+        font-size:20px;
     }
 
     header{
@@ -195,7 +215,6 @@ nav>button:hover{
     #contactus>h3{
         margin-right: 20px;
         margin-left: 20px;
-        padding-left: 15px;
         width: 85%;
     }
     #reviews{
@@ -216,14 +235,18 @@ nav>button:hover{
         width: 100%;
     }
     #portfolio>div{
-        width: 350px;
+        width: 380px
+    }
+    #portfolio>div>img{
+        height: 300px
     }
     #reviews>div{
         width: 350px;
     }
 
     #services>div{
-        width: 350px;
+        width: 200%;
+        max-width: 350px;
     }
 
 }

@@ -17,21 +17,21 @@ export default function Home() {
     <>
       <div
         id="bg"
-        className="w-[100%] h-[100vh] bg-[#2F6B4F] text-white font-light"
+        className="w-[100%] h-[140vh] bg-[#2F6B4F] text-white font-light"
       >
-        <header className="flex justify-between w-[100%] pt-[10px] pb-[10px] pr-[80px] pl-[80px] fixed top-0 bg-[#2F6B4F] z-[99]">
+        <header className="flex justify-between w-[100%] pt-[10px] pb-[10px] pr-[30px] pl-[30px] fixed top-0 bg-[#2F6B4F] z-[99]">
           <Header home= {homesRef} reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} services = {servicesRef}/>
         </header>
-        <main ref={homesRef} id="main" className=" flex justify-center flex-col mt-[60px] pr-[100px] pl-[100px]">
+        <main ref={homesRef} id="main" className=" flex justify-center flex-col mt-[30px] pr-[100px] pl-[100px]">
           <Main />
         </main>
-        <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] flex flex-col justify-center ">
+        <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] flex flex-col justify-center pr-[1%] pl-[1%] ">
           <Services />
         </section>
-        <section ref={portfolioRef} className="text-[#2A2C3D] w-[100%]">
+        <section ref={portfolioRef} className="text-[#2A2C3D] w-[100%] pr-[1%] pl-[1%]">
           <Portfolio />
         </section>
-        <section ref={reviewsRef} className="text-[#2A2C3D] w-[100%]">
+        <section ref={reviewsRef} className="text-[#2A2C3D] w-[100%] pr-[1%] pl-[1%]">
           <Reviews />
         </section>
         <section 

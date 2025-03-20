@@ -5,15 +5,15 @@ import james from "../../../public/james.png"
 
 export default function Reviews(){
     return (
-      <>
-        <div className="w-[80%] ml-auto mr-auto mb-[40px] pt-[50px]">
+      <div className="max-w-[2000px] mr-auto ml-auto">
+        <div className=" mb-[40px] pt-[50px] ml-[10%]">
           <h3>Client Reviews</h3>
           <h2 className="text-[30px] font-semibold">
             What Our Happy Clients Say About Us
           </h2>
         </div>
         <div id="reviews" className="flex flex-wrap ">
-          <div className="w-[300px]">
+          <div >
             <h2 className="font-semibold text-[18px]">Website My Hospital</h2>
             <p className="text-[14px]">
               Very nice to work with Bubble Bash, a reliable and responsive team
@@ -27,7 +27,7 @@ export default function Reviews(){
               </div>
             </div>
           </div>
-          <div className="w-[300px]">
+          <div >
             <h2 className="font-semibold text-[18px]">Logo F&B Corp</h2>
             <p className="text-[14px]">
               Really the best service we've ever gotten, really looking forward
@@ -41,7 +41,7 @@ export default function Reviews(){
               </div>
             </div>
           </div>
-          <div className="w-[300px]">
+          <div>
             <h2 className="font-semibold text-[18px]">Supermarket Mobile Apps</h2>
             <p className="text-[14px]">
               Really the best service we've ever gotten, really looking forward
@@ -56,6 +56,6 @@ export default function Reviews(){
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
 }

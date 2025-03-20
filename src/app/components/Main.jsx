@@ -2,11 +2,11 @@ import mainImage from "../../../public/landingpageimage.jpg"
 import Image from "next/image";
 export default function Main(){
     return (
-      <>
-        <h1 className="w-fit text-[500%] text-center font-semibold mr-auto ml-auto font-mono">
+      <div className="flex flex-col justify-between max-w-[2000px] mr-auto ml-auto">
+        <h1 className=" text-[500%] self-center text-center font-semibold mt-[60px] mr-auto ml-auto font-mono">
           Create Amazing Digital Product For your Business
         </h1>
-        <h3 className=" text-center text-[22px] w-[50%] font-light mr-auto ml-auto mt-[45px] mb-[60px]">
+        <h3 className=" text-center text-[22px] font-light mr-[2%] ml-[2%] mt-[45px] mb-[60px]">
           We are a professional digital agency that has been established since
           2016, we present a variety of digital services that can help you solve
           problems in your business
@@ -19,7 +19,7 @@ export default function Main(){
         </div>
         <div
           id="stats"
-          className="w-full flex text-[#2A2C3D] justify-center space-x-[12%] mt-[50px] mb-[100px] pr-2 pl-2"
+          className="w-[90%] flex text-[#2A2C3D] justify-between self-center mt-[30px] mb-[30px]"
         >
           <div>
             <h2 className="text-center font-semibold text-[40px]">1.2K+</h2>
@@ -38,6 +38,6 @@ export default function Main(){
             <h3>Award Winnders</h3>
           </div>
         </div>
-      </>
+      </div>
     );
 }
