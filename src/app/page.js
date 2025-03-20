@@ -31,7 +31,7 @@ export default function Home() {
         <section ref={portfolioRef} className="text-[#2A2C3D] w-[100%] pr-[3%] pl-[3%]">
           <Portfolio />
         </section>
-        <section ref={reviewsRef} className="text-[#2A2C3D] w-[100%] pr-[1%] pl-[1%]">
+        <section ref={reviewsRef} className="text-[#2A2C3D] w-[100%] pr-[3%] pl-[3%]">
           <Reviews />
         </section>
         <section 
