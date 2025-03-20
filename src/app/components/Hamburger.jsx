@@ -1,5 +1,4 @@
 "use client"
-import Nav from "./Nav";
 import { useState, useEffect, useRef } from "react"
 import Hamburger from "hamburger-react";
 

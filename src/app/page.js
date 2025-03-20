@@ -25,10 +25,10 @@ export default function Home() {
         <main ref={homesRef} id="main" className=" flex justify-center flex-col mt-[30px] pr-[100px] pl-[100px]">
           <Main />
         </main>
-        <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] flex flex-col justify-center pr-[1%] pl-[1%] ">
+        <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] flex flex-col justify-center pr-[3%] pl-[3%] ">
           <Services />
         </section>
-        <section ref={portfolioRef} className="text-[#2A2C3D] w-[100%] pr-[1%] pl-[1%]">
+        <section ref={portfolioRef} className="text-[#2A2C3D] w-[100%] pr-[3%] pl-[3%]">
           <Portfolio />
         </section>
         <section ref={reviewsRef} className="text-[#2A2C3D] w-[100%] pr-[1%] pl-[1%]">

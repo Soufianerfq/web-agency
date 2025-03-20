@@ -164,6 +164,13 @@ nav>button:hover{
         font-size: 30px;
     }
 
+    #logo>img{
+        width: 40px;
+    }
+    #logo>h2{
+        margin-top: 4px;
+    }
+
     main{
         padding-left: 5px;
         padding-right: 5px;
@@ -198,8 +205,8 @@ nav>button:hover{
     }
 
     header{
-        padding-left: 30px;
-        padding-top: 20px;
+        padding-left: 10px;
+        padding-top: 5px;
     }
 
     #contactus{
