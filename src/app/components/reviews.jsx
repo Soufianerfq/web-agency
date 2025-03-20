@@ -6,7 +6,7 @@ import james from "../../../public/james.png"
 export default function Reviews(){
     return (
       <div className="max-w-[2000px] mr-auto ml-auto">
-        <div className=" mb-[40px] pt-[50px] ml-[10%]">
+        <div className="w-[80%] mb-[40px] pt-[50px] ml-[10%]">
           <h3>Client Reviews</h3>
           <h2 className="text-[30px] font-semibold">
             What Our Happy Clients Say About Us
