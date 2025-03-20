@@ -19,7 +19,7 @@ export default function Main(){
         </div>
         <div
           id="stats"
-          className="w-full flex text-[#2A2C3D] justify-center space-x-[12%] mt-[50px] mb-[100px]"
+          className="w-full flex text-[#2A2C3D] justify-center space-x-[12%] mt-[50px] mb-[100px] pr-2 pl-2"
         >
           <div>
             <h2 className="text-center font-semibold text-[40px]">1.2K+</h2>

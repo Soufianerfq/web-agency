@@ -12,7 +12,7 @@ export default function Reviews(){
             What Our Happy Clients Say About Us
           </h2>
         </div>
-        <div id="reviews" className="flex flex-wrap mr-auto ml-auto ">
+        <div id="reviews" className="flex flex-wrap ">
           <div className="w-[300px]">
             <h2 className="font-semibold text-[18px]">Website My Hospital</h2>
             <p className="text-[14px]">
