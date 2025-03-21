@@ -8,7 +8,7 @@ export default function Nav({home, portfolio, reviews, contactus, services }) {
                         block: "start"
 
           })
-        }>Home</button>
+        } className="">Home</button>
       <button
         onClick={() =>
           services.current?.scrollIntoView({

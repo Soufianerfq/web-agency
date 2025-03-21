@@ -24,8 +24,8 @@ export default function HamburgerComp({home, portfolio, reviews, contactus, serv
           {/* <div className="flex items-center justify-end">
             <Hamburger size={24} toggled={isOpen} toggle={setOpen} />
           </div> */}
-        <div ref={navRef} className="fixed transition-all  top-0 left-0 w-screen  text-white bg-[#2F6B4F] mar ">
-            <div className="flex items-center justify-end">
+        <div ref={navRef} className="fixed transition-all  top-0 left-0 w-screen  text-white bg-[#2F6B4F] p-[3px]">
+            <div className="flex items-center justify-end ">
             <Hamburger size={24} toggled={isOpen} toggle={setOpen} />
           </div>
           <nav ref={linkRef} className="flex flex-col items-center space-y-[50px]">

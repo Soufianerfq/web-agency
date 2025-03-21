@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import Header from "./components/Heade";
 import Main from "./components/Main";
+import Stats from "./components/Stats";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Reviews from "./components/reviews";
@@ -15,36 +16,40 @@ export default function Home() {
   const homesRef = useRef()
   return (
     <>
-      <div
+      {/* <div
         id="bg"
         className="w-[100%] h-[140vh] bg-[#2F6B4F] text-white font-light"
-      >
-        <header className="flex justify-between w-[100%] pt-[10px] pb-[10px] pr-[30px] pl-[30px] fixed top-0 bg-[#2F6B4F] z-[99]">
+      > */}
+        <header className="flex justify-between w-[100%] pt-[5px] pb-[10px] pr-[10px] pl-[10px] fixed top-0 bg-[#2F6B4F] z-[99] text-white ">
           <Header home= {homesRef} reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} services = {servicesRef}/>
         </header>
-        <main ref={homesRef} id="main" className=" flex justify-center flex-col mt-[30px] pr-[100px] pl-[100px]">
+        <main ref={homesRef} id="main" className=" mt-[30px] pr-[10px] pl-[10px] bg-[#2F6B4F] text-white md:pr-[25px] md:pl-[25px] sm:pr-[10px] sm:pl-[10px]" >
           <Main />
         </main>
-        <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] flex flex-col justify-center pr-[3%] pl-[3%] ">
+        <section
+          className="w-[100%] text-[#2A2C3D] pr-[10px] pl-[10px] md:pr-[25px] md:pl-[25px] sm:pr-[10px] sm:pl-[10px]">
+          <Stats/>
+        </section>
+        <section ref={servicesRef} className="text-[#2A2C3D] w-[100%] bg-[#F9F9F9] md:pr-[25px] md:pl-[25px] sm:pr-[10px] sm:pl-[10px]">
           <Services />
         </section>
-        <section ref={portfolioRef} className="text-[#2A2C3D] w-[100%] pr-[3%] pl-[3%]">
+        <section ref={portfolioRef} className="text-[#2A2C3D] w-[100%] md:pr-[25px] md:pl-[25px] sm:pr-[10px] sm:pl-[10px]">
           <Portfolio />
         </section>
-        <section ref={reviewsRef} className="text-[#2A2C3D] w-[100%] pr-[1%] pl-[1%]">
+        <section ref={reviewsRef} className="text-[#2A2C3D] w-[100%] md:pr-[25px] md:pl-[25px] sm:pr-[10px] sm:pl-[10px]">
           <Reviews />
         </section>
         <section 
         ref={contactusRef}
           id="contactus"
-          className=" w-[100%] pt-[20px] pr-[140px] pl-[140px] pb-[20px] bg-[#2F6B4F] text-white flex justify-center flex-col"
+          className=" w-[100%] pt-[20px] pb-[20px] md:pr-[25px] pr-[10px] pl-[10px] md:pl-[25px] sm:pr-[10px] sm:pl-[10px] bg-[#2F6B4F] text-white "
         >
           <Contactus />
         </section>
-        <footer className="text-[#2A2C3D] w-[100%] flex pt-[90px] pb-[90px] max-[928px]:flex-col">
+        <footer className="text-[#2A2C3D] w-[100%]  md:pr-[25px] md:pl-[25px] sm:pr-[10px] sm:pl-[10px]">
           <Footer home= {homesRef} reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} services = {servicesRef}/>
         </footer>
-      </div>
+      {/* </div> */}
     </>
   );
 }
