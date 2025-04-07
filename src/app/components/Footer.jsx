@@ -10,7 +10,7 @@ export default function Footer({home, portfolio, reviews, contactus, services })
       <div className="max-w-[1600px] flex flex-col sm:flex-row  ml-auto mr-auto">
         <div className=" w-[80%] mr-auto ml-auto sm:w-[50%] 2xl:w-[30%]">
           <div className="flex mt-[15px]"  >
-            <Image src={logo} />
+            <Image alt="logo" src={logo} />
             <h2 className="font-semibold text-[21px] mt-[8px] ml-[8px]">
               Bubble Bash
             </h2>
@@ -21,10 +21,10 @@ export default function Footer({home, portfolio, reviews, contactus, services })
             heart
           </p>
           <div id="sm" className="flex mt-[30px]">
-            <Image src={facebook} />
-            <Image src={twitter} />
-            <Image src={instagram} />
-            <Image src={linkdin} />
+            <Image alt="facebook" src={facebook} />
+            <Image alt="twitter" src={twitter} />
+            <Image alt="instagram" src={instagram} />
+            <Image alt="linkdin" src={linkdin} />
           </div>
         </div>
 

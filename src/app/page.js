@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import Header from "./components/Heade";
+// import Header from "./components/Heade";
 import Main from "./components/Main";
 import Stats from "./components/Stats";
 import Services from "./components/Services";
@@ -8,18 +8,22 @@ import Portfolio from "./components/Portfolio";
 import Reviews from "./components/reviews";
 import Contactus from "./components/Contactus";
 import Footer from "./components/Footer";
+import dynamic from 'next/dynamic';
+
+
 export default function Home() {
   const reviewsRef = useRef()
   const portfolioRef = useRef()
   const contactusRef = useRef()
   const servicesRef = useRef()
   const homesRef = useRef()
+
+  const Header = dynamic(() => import("../app/components/Heade"), {
+    ssr: false,
+  })
+
   return (
     <>
-      {/* <div
-        id="bg"
-        className="w-[100%] h-[140vh] bg-[#2F6B4F] text-white font-light"
-      > */}
         <header className="flex justify-between w-[100%] pt-[5px] pb-[10px] pr-[10px] pl-[10px] fixed top-0 bg-[#2F6B4F] z-[99] text-white ">
           <Header home= {homesRef} reviews= {reviewsRef} portfolio = {portfolioRef} contactus = {contactusRef} services = {servicesRef}/>
         </header>

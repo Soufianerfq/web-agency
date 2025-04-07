@@ -17,7 +17,7 @@ export default function Portfolio(){
           className="flex flex-wrap lg:w-[90%]"
         >
           <div className="w-[310px] sm:w-[250px] lg:w-[300px] 2xl:w-[350px]">
-            <Image  src={hospital} />
+            <Image alt="hospital" src={hospital} />
             <h2 className="text-[16px] 2xl:text-[20px]">Website My Hospital</h2>
             <p className="text-[13px] 2xl:text-[17px]">
               Create a hospital website with patient, doctor, and drug logistics
@@ -25,7 +25,7 @@ export default function Portfolio(){
             </p>
           </div>
           <div className="w-[310px] sm:w-[250px] lg:w-[300px] 2xl:w-[350px]">
-            <Image  src={food} />
+            <Image alt="food" src={food} />
             <h2 className="text-[16px] 2xl:text-[20px]">Food & Beverages Corp Logo</h2>
             <p className="text-[13px] 2xl:text-[17px]">
               Create a logo for a food & beverage company, with emphasis on
@@ -33,7 +33,7 @@ export default function Portfolio(){
             </p>
           </div>
           <div className="w-[310px] sm:w-[250px] lg:w-[300px] 2xl:w-[350px]">
-            <Image src={superM} />
+            <Image alt="supermarket" src={superM} />
             <h2 className="text-[16px] 2xl:text-[20px]">Supermarket Mobile Apps</h2>
             <p className="text-[13px] 2xl:text-[17px]">
               Develop mobile applications for supermarkets with buy, auto-pay,

@@ -20,7 +20,7 @@ export default function Reviews(){
               is very helpful
             </p>
             <div className="flex">
-              <Image src={katty} />
+              <Image alt="person" src={katty} />
               <div>
                 <h2 className="font-semibold text-[16px]">Katty Clock</h2>
                 <h2 className="text-[13px] 2xl:text-[17px] ">CEO My Hospital</h2>
@@ -34,7 +34,7 @@ export default function Reviews(){
               to the next project
             </p>
             <div className="flex">
-              <Image src={john} />
+              <Image alt="person" src={john} />
               <div>
                 <h2 className="font-semibold text-[16px]">John Robert </h2>
                 <h2 className="text-[13px] 2xl:text-[17px] ">CEO F&B Corp</h2>
@@ -48,7 +48,7 @@ export default function Reviews(){
               to the next project
             </p>
             <div className="flex">
-              <Image src={james} />
+              <Image alt="person" src={james} />
               <div>
                 <h2 className="font-semibold text-[16px]">James Clock</h2>
                 <h2 className="text-[13px] 2xl:text-[17px] ">CEO Supermarket</h2>

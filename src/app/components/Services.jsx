@@ -20,7 +20,7 @@ export default function Services(){
           className="flex flex-wrap w-[87%] justify-center self-center lg:w-[80%]"
         >
           <div className="card w-[310px] sm:w-[250px] lg:w-[250px] 2xl:w-[350px]">
-            <Image src={figma} />
+            <Image alt="figma" src={figma} />
             <h2 className="text-[16px] 2xl:text-[20px]">UI/UX Designer</h2>
             <p className="text-[13px] 2xl:text-[17px]">
               We are ready to make your website more friendly and efficient in
@@ -28,7 +28,7 @@ export default function Services(){
             </p>
           </div>
           <div className="card w-[310px] sm:w-[250px] lg:w-[250px] 2xl:w-[350px]">
-            <Image src={webdev} />
+            <Image alt="webdev" src={webdev} />
             <h2 className="text-[16px] 2xl:text-[20px]">Web Development</h2>
             <p className="text-[13px] 2xl:text-[17px]">
               Want to create a website that has many features? We have the
@@ -36,14 +36,14 @@ export default function Services(){
             </p>
           </div>
           <div className="card w-[310px] sm:w-[250px] lg:w-[250px] 2xl:w-[350px]">
-            <Image src={content} />
+            <Image alt="content" src={content} />
             <h2 className="text-[16px] 2xl:text-[20px]">Content Writer</h2>
             <p className="text-[13px] 2xl:text-[17px]">
               We provide interesting content and can attract customers for you
             </p>
           </div>
           <div className="card w-[310px] sm:w-[250px] lg:w-[250px] 2xl:w-[350px]">
-            <Image src={branding} />
+            <Image alt="branding" src={branding} />
             <h2 className="text-[16px] 2xl:text-[20px]">Branding</h2>
             <p className="text-[13px] 2xl:text-[17px]">
               Create visual branding with amazing result, you just sit back and
@@ -51,7 +51,7 @@ export default function Services(){
             </p>
           </div>
           <div className="card w-[310px] sm:w-[250px] lg:w-[250px] 2xl:w-[350px]">
-            <Image src={video} />
+            <Image alt="video" src={video} />
             <h2 className="text-[16px] 2xl:text-[20px]">Editing Video</h2>
             <p className="text-[13px] 2xl:text-[17px]">
               Want to create a website that has many features? We have the
@@ -59,7 +59,7 @@ export default function Services(){
             </p>
           </div>
           <div className="card w-[310px] sm:w-[250px] lg:w-[250px] 2xl:w-[350px]">
-            <Image src={illustrating} />
+            <Image alt="illustration" src={illustrating} />
             <h2 className="text-[16px] 2xl:text-[20px]">Illustrating</h2>
             <p className="text-[13px] 2xl:text-[17px]">
               Create beauty illustrasion as you need, and make it interesting
